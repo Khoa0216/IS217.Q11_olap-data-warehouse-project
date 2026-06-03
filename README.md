@@ -34,7 +34,8 @@ Kho chứa này được tổ chức theo các phân mục chức năng như sau
 - Dự án ETL (SSIS) & Thiết kế OLAP Cube (SSAS).
 - Các câu lệnh truy vấn phân tích chuyên sâu (`MDX_Query.mdx`).
 - File thiết kế báo cáo trực quan (`.pbix`, Looker, Excel Pivot).
-- Mã nguồn phân tích khai phá dữ liệu (`.ipynb`, `.html`).  
+- Mã nguồn phân tích khai phá dữ liệu (`.ipynb`, `.html`).
+
 📂 **Text file_ the information of group (member name, job)/**: Thông tin chi tiết về bảng phân công công việc của nhóm.
 
 ---
