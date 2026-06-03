@@ -1,0 +1,105 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d7f7fb14-832c-413c-a741-46974b6c8c59" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TMDB Movie Data Ware House</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT MOVIE</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="81ecb2e5-871d-4fc4-9ff3-c5e0ae6565bf">
+          <ID>FACT MOVIE</ID>
+          <Name>FACT MOVIE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="332ce3a5-c4ac-4cce-8c29-5615a33ac283">
+            <DataSourceViewID>TMDB Movie Data Ware House</DataSourceViewID>
+            <TableID>dbo_FACT_MOVIE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>BRIDGE MOVIE COUNTRY</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d0bd4451-cb74-463a-9667-7bde223323fd">
+          <ID>BRIDGE MOVIE COUNTRY</ID>
+          <Name>BRIDGE MOVIE COUNTRY</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="078e4692-c9a4-4f75-97fc-83c1c6b7733b">
+            <DataSourceViewID>TMDB Movie Data Ware House</DataSourceViewID>
+            <TableID>dbo_BRIDGE_MOVIE_COUNTRY</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>BRIDGE MOVIE COMPANY</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="750d0c4a-fb10-4991-8083-5af4af27a6d4">
+          <ID>BRIDGE MOVIE COMPANY</ID>
+          <Name>BRIDGE MOVIE COMPANY</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="89e93d91-3377-4dc8-aab5-2317e0559e58">
+            <DataSourceViewID>TMDB Movie Data Ware House</DataSourceViewID>
+            <TableID>dbo_BRIDGE_MOVIE_COMPANY</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>BRIDGE MOVIE GENRE</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d7b23048-4274-44f7-adfe-dd00b19a356c">
+          <ID>BRIDGE MOVIE GENRE</ID>
+          <Name>BRIDGE MOVIE GENRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6eda5ef9-9f36-49b9-84e7-39f753d5e816">
+            <DataSourceViewID>TMDB Movie Data Ware House</DataSourceViewID>
+            <TableID>dbo_BRIDGE_MOVIE_GENRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>BRIDGE MOVIE LANGUAGE</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6afb5404-9e1c-4e9f-9a6a-1210051ce79c">
+          <ID>BRIDGE MOVIE LANGUAGE</ID>
+          <Name>BRIDGE MOVIE LANGUAGE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d4537ea2-ae8b-4ffd-9aee-bae313a02cb6">
+            <DataSourceViewID>TMDB Movie Data Ware House</DataSourceViewID>
+            <TableID>dbo_BRIDGE_MOVIE_LANGUAGE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

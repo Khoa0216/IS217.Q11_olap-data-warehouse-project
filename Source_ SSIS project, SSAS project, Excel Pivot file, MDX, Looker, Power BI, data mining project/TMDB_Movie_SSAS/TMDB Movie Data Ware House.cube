@@ -1,0 +1,953 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="df1c9591-a342-4823-9b82-dd31e37621e3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TMDB Movie Data Ware House</ID>
+  <Name>TMDB Movie Data Ware House</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="44" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7525" scrolltop="-45" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="98" x="29598" y="21643" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="BRIDGE_MOVIE_GENRE" left="83" top="16038" logicalid="22" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_BRIDGE_MOVIE_GENRE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="BRIDGE_MOVIE_COMPANY" left="2923" top="0" logicalid="23" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_BRIDGE_MOVIE_COMPANY" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="BRIDGE_MOVIE_COUNTRY" left="240" top="6052" logicalid="24" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_BRIDGE_MOVIE_COUNTRY" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_COMPANY" left="8323" top="0" logicalid="25" controlid="4" masterid="0" hint1="0" hint2="0" width="3475" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000930d0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DIM_COMPANY" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="BRIDGE_MOVIE_LANGUAGE" left="11560" top="16038" logicalid="26" controlid="5" masterid="0" hint1="0" hint2="0" width="3104" height="1887" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000200c00005f070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_BRIDGE_MOVIE_LANGUAGE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_DATE" left="11444" top="3936" logicalid="27" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DIM_DATE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_GENRE" left="57" top="19973" logicalid="28" controlid="7" masterid="0" hint1="0" hint2="0" width="3052" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ec0b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DIM_GENRE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FACT_MOVIE" left="11260" top="9634" logicalid="29" controlid="8" masterid="0" hint1="0" hint2="0" width="3369" height="4004" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000290d0000a40f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FACT_MOVIE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_COUNTRY" left="20" top="9987" logicalid="30" controlid="9" masterid="0" hint1="0" hint2="0" width="3440" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000700d0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DIM_COUNTRY" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_LANGUAGE" left="5509" top="16214" logicalid="31" controlid="10" masterid="0" hint1="0" hint2="0" width="3651" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000430e0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DIM_LANGUAGE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_MOVIE" left="5860" top="7843" logicalid="32" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="1887" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00005f070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DIM_MOVIE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="1283" top="9231" logicalid="33" controlid="12" masterid="0" hint1="0" hint2="0" width="5377" height="7107" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__BRIDGE_MO__MOVIE__0662F0A3]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="1" sourceattachpoint="1" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6260" y="9730" />
+              <point x="6260" y="12884" />
+              <point x="1583" y="12884" />
+              <point x="1583" y="16038" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="1184" top="17273" logicalid="34" controlid="13" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__BRIDGE_MO__GENRE__075714DC]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="1" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1583" y="19973" />
+              <point x="1583" y="17573" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="5623" top="368" logicalid="35" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__BRIDGE_MO__COMPA__13BCEBC1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="12" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8323" y="767" />
+              <point x="5923" y="767" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4123" top="1235" logicalid="36" controlid="15" masterid="0" hint1="0" hint2="0" width="3637" height="7108" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__BRIDGE_MO__MOVIE__12C8C788]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="2" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7360" y="7843" />
+              <point x="7360" y="4689" />
+              <point x="4423" y="4689" />
+              <point x="4423" y="1535" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="1341" top="7287" logicalid="37" controlid="16" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__BRIDGE_MO__COUNT__0B27A5C0]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="3" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1740" y="9987" />
+              <point x="1740" y="7587" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2940" top="6519" logicalid="38" controlid="17" masterid="0" hint1="0" hint2="0" width="3220" height="2667" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__BRIDGE_MO__MOVIE__0A338187]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="3" sourceattachpoint="12" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5860" y="8786" />
+              <point x="4550" y="8786" />
+              <point x="4550" y="6819" />
+              <point x="3240" y="6819" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8860" top="16582" logicalid="39" controlid="18" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__BRIDGE_MO__LANGU__0FEC5ADD]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="5" sourceattachpoint="17" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9160" y="16981" />
+              <point x="11560" y="16981" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7511" top="9231" logicalid="40" controlid="19" masterid="0" hint1="0" hint2="0" width="5901" height="7107" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__BRIDGE_MO__MOVIE__0EF836A4]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="5" sourceattachpoint="7" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7910" y="9730" />
+              <point x="7910" y="12884" />
+              <point x="13112" y="12884" />
+              <point x="13112" y="16038" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="12545" top="6735" logicalid="41" controlid="20" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FACT_MOVI__DATE___178D7CA5]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="8" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12944" y="7234" />
+              <point x="12944" y="9634" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8560" top="8387" logicalid="42" controlid="21" masterid="0" hint1="0" hint2="0" width="3000" height="3549" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__FACT_MOVI__MOVIE__1699586C]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="8" sourceattachpoint="13" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8860" y="8786" />
+              <point x="10060" y="8786" />
+              <point x="10060" y="11636" />
+              <point x="11260" y="11636" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-7525</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-45</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>98</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="5450f4e5-344c-4488-a033-9c19ee4bc043">
+      <ID>DIM DATE</ID>
+      <Name>DIM DATE</Name>
+      <DimensionID>DIM DATE</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="426cb529-e41e-43d8-8561-ddf0dc5ce255">
+          <AttributeID>DATE ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="962966b6-cc0e-43ad-9e80-0fcb390a22a0">
+          <AttributeID>FULL DATE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8edda03b-e5a5-47a3-8f0e-439be22f2ac3">
+          <AttributeID>YEAR</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="925fe6f0-37c4-4c8c-83f1-9a97b06062a6">
+          <AttributeID>MONTH</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="05f0b676-4def-4c1c-a24b-fab4bc8dc084">
+          <AttributeID>DAY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ae372f18-0dc1-4b61-b8f2-ba92ad93ddf8">
+          <AttributeID>HALF YEAR</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8e28a9fe-ac84-44eb-be29-163089686b24">
+          <AttributeID>QUARTER</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3beb61ee-c839-4cdb-94cf-8933010d6114">
+          <AttributeID>Decade</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="a8594d15-3e2f-4a00-a859-477e8f278726">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="4aea33f7-ebdc-463a-b8f9-a9f5870d9094">
+      <ID>DIM MOVIE</ID>
+      <Name>DIM MOVIE</Name>
+      <DimensionID>DIM MOVIE</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a7de1f44-4422-43d0-a26d-09d583a5635f">
+          <AttributeID>MOVIE ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="18cd3535-c2ca-45ac-8d34-23b8e7715e1c">
+          <AttributeID>TITLE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e2a3758d-b143-48e1-a88a-9d6fca3f48cc">
+          <AttributeID>ADULT</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8e44530d-2c4f-403f-8ef8-c278ec05f7b8">
+      <ID>DIM COUNTRY</ID>
+      <Name>DIM COUNTRY</Name>
+      <DimensionID>DIM COUNTRY</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7ae95599-adcc-4e0e-aa1b-76c5288885f7">
+          <AttributeID>COUNTRY ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="82c643e8-ec23-4f3f-b8b8-3d2090841485">
+          <AttributeID>COUNTRY NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f8998622-4cd1-401c-a9e5-5a804aca42d4">
+      <ID>DIM COMPANY</ID>
+      <Name>DIM COMPANY</Name>
+      <DimensionID>DIM COMPANY</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e53856ed-e1ca-4dcc-9c7d-3d09f6054825">
+          <AttributeID>COMPANY ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="16ace0e8-8cf2-4883-abc6-c8012a78b982">
+          <AttributeID>COMPANY NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="aaee3b5b-c1b5-432d-aa58-927e7619c000">
+      <ID>DIM GENRE</ID>
+      <Name>DIM GENRE</Name>
+      <DimensionID>DIM GENRE</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4a1140f9-eddc-4120-8a37-2c519686db5a">
+          <AttributeID>GENRE ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="40038cbf-e02d-43cc-9179-f1a1b1845d5e">
+          <AttributeID>GENRE NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="927225d9-2c3e-4ceb-9aed-2dda0f86769d">
+      <ID>DIM LANGUAGE</ID>
+      <Name>DIM LANGUAGE</Name>
+      <DimensionID>DIM LANGUAGE</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f8e48212-305c-4c48-b660-3164a6df2a59">
+          <AttributeID>LANGUAGE ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d0fb597a-aa6d-4872-9b49-c0043977b46c">
+          <AttributeID>LANGUAGE NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="49a7c1cc-bc54-4288-b8cd-b1ddf469621a">
+      <ID>BRIDGE MOVIE LANGUAGE</ID>
+      <Name>BRIDGE MOVIE LANGUAGE</Name>
+      <DimensionID>BRIDGE MOVIE LANGUAGE</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="06f40548-3aed-4967-b098-f0c8613d5892">
+          <AttributeID>MOVIE ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="58de4135-f006-4ab3-a360-a28d402bc17a">
+          <AttributeID>IS ORIGINAL</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="5fee1afb-7fcc-4f01-be89-2408a53c354a">
+      <ID>FACT MOVIE</ID>
+      <Name>FACT MOVIE</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="76ee3d8d-f5f6-4fd8-851e-9759a7362921">
+          <ID>RUNTIME</ID>
+          <Name>RUNTIME</Name>
+          <Source dwd:design-time-name="c6b90da7-2835-4998-8529-a5b60ef97afc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f9c78a00-54e0-4c23-a13e-beee96e96ce2">
+              <TableID>dbo_FACT_MOVIE</TableID>
+              <ColumnID>RUNTIME</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e0cc5f78-adc8-4a3e-82ad-904566467e4b">
+          <ID>BUDGET</ID>
+          <Name>BUDGET</Name>
+          <Source dwd:design-time-name="08312e9a-3ee9-4753-9320-15020d11d34d">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="521c1c90-36b1-48ec-9634-8c29b08e4538">
+              <TableID>dbo_FACT_MOVIE</TableID>
+              <ColumnID>BUDGET</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9c0b003a-8975-4cd5-8e9d-8b5ff4ec64e3">
+          <ID>REVENUE</ID>
+          <Name>REVENUE</Name>
+          <Source dwd:design-time-name="dfa68c48-0afa-421d-bed4-37e55d16ab45">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5db1a6e8-9d3c-4f39-95c4-cd1b4fe5abd0">
+              <TableID>dbo_FACT_MOVIE</TableID>
+              <ColumnID>REVENUE</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7cbbb0dc-80c2-4d14-8304-2dbdacc4f56e">
+          <ID>VOTE AVERAGE</ID>
+          <Name>VOTE AVERAGE</Name>
+          <Source dwd:design-time-name="946a0181-5fe5-4f1b-bbeb-5bcc2e7db0d0">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6844377a-4738-4445-8ead-d929452a6dd6">
+              <TableID>dbo_FACT_MOVIE</TableID>
+              <ColumnID>VOTE_AVERAGE</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="81c0566e-b3b4-457b-af34-4c13fcf861f7">
+          <ID>VOTE COUNT</ID>
+          <Name>VOTE COUNT</Name>
+          <Source dwd:design-time-name="87bbe7cd-92ae-4406-9458-834e7fb8d3f9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="873ee912-ddda-455d-b094-add5da8106ef">
+              <TableID>dbo_FACT_MOVIE</TableID>
+              <ColumnID>VOTE_COUNT</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b4b633b9-ac97-4066-a1d6-f842ce994808">
+          <ID>POPULARITY</ID>
+          <Name>POPULARITY</Name>
+          <Source dwd:design-time-name="4cc5e0f5-ed6b-4949-af15-40c56340e068">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c3d03389-98d2-4e5b-9270-7c0fb3ed44e6">
+              <TableID>dbo_FACT_MOVIE</TableID>
+              <ColumnID>POPULARITY</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d2322c60-ec36-470e-9af0-06884832b5dc">
+          <ID>FACT MOVIE Count</ID>
+          <Name>FACT MOVIE Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a6adc303-e314-45eb-8ddc-038287b91ced">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="748c50bb-cc9d-4fb1-a4b4-81b316ed8ed5">
+              <TableID>dbo_FACT_MOVIE</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fdd675fa-ff93-4f9b-8cf8-deca75a43f5c">
+          <CubeDimensionID>DIM DATE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2be86da4-6b6f-422d-b4aa-87b0fdebf2cf">
+              <AttributeID>DATE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4775dac2-52ce-41f5-8bd3-97fd66ebcd88">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d9269ed0-69c2-42c0-8b9e-7146e7c88398">
+                    <TableID>dbo_FACT_MOVIE</TableID>
+                    <ColumnID>DATE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3f2bf809-324d-4ae1-b44f-32e8f1dbf97d">
+          <CubeDimensionID>DIM MOVIE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="970585cd-1454-4b2e-acfe-fb10e600a1bd">
+              <AttributeID>MOVIE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="354b3bbc-001f-4d4f-8b23-0fe837cbf197">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eab159f3-183c-4b45-9def-9fa53bc839e9">
+                    <TableID>dbo_FACT_MOVIE</TableID>
+                    <ColumnID>MOVIE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="764fa5f3-8666-4541-ace0-0238b9436ec9">
+          <CubeDimensionID>DIM COUNTRY</CubeDimensionID>
+          <MeasureGroupID>BRIDGE MOVIE COUNTRY</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="fe973d12-d1a0-4987-9a40-e74daceb94f3">
+          <CubeDimensionID>DIM COMPANY</CubeDimensionID>
+          <MeasureGroupID>BRIDGE MOVIE COMPANY</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="421ad2cc-530b-4ed4-8283-3ca1671cc88a">
+          <CubeDimensionID>DIM GENRE</CubeDimensionID>
+          <MeasureGroupID>BRIDGE MOVIE GENRE</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="45450033-217f-4784-8f7d-2c4c6816ac16">
+          <CubeDimensionID>DIM LANGUAGE</CubeDimensionID>
+          <MeasureGroupID>BRIDGE MOVIE LANGUAGE</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="8ac826b3-c9f7-4ad3-b6ba-906d69aee4d7">
+          <CubeDimensionID>BRIDGE MOVIE LANGUAGE</CubeDimensionID>
+          <MeasureGroupID>BRIDGE MOVIE LANGUAGE</MeasureGroupID>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="22893257-065b-47b9-b37d-c4b79dda48b0">
+      <ID>BRIDGE MOVIE COUNTRY</ID>
+      <Name>BRIDGE MOVIE COUNTRY</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="de07b412-07fd-417e-be22-a74de137bad7">
+          <ID>BRIDGE MOVIE COUNTRY Count</ID>
+          <Name>BRIDGE MOVIE COUNTRY Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="49303f8d-97c4-40b2-8fc8-b8aa0370e112">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="affb59af-e3f0-432b-97c0-32f929acadd1">
+              <TableID>dbo_BRIDGE_MOVIE_COUNTRY</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6abd47a6-c59d-4394-8d85-065ce6dcb1de">
+          <CubeDimensionID>DIM COUNTRY</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="89075d68-fb19-45cc-ac87-3dae0886680a">
+              <AttributeID>COUNTRY ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="41ad9258-10f4-4378-b374-68862f226882">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="deeeb8da-3073-4536-bba0-ee35b68763ce">
+                    <TableID>dbo_BRIDGE_MOVIE_COUNTRY</TableID>
+                    <ColumnID>COUNTRY_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9e35cdbf-e27e-4cad-812a-7951233c8c48">
+          <CubeDimensionID>DIM MOVIE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="96bcab57-256f-4496-a8cb-8f5f8551b1dd">
+              <AttributeID>MOVIE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a7bd9fab-b82a-4bfc-b56b-66acec1b3ce6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="413d0012-a86d-4a32-8879-2478dc80d312">
+                    <TableID>dbo_BRIDGE_MOVIE_COUNTRY</TableID>
+                    <ColumnID>MOVIE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="28d3a98b-9a05-48cf-a7b2-6585f37521f2">
+      <ID>BRIDGE MOVIE COMPANY</ID>
+      <Name>BRIDGE MOVIE COMPANY</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="be4968df-da75-4f98-b4f8-00e828b45b48">
+          <ID>BRIDGE MOVIE COMPANY Count</ID>
+          <Name>BRIDGE MOVIE COMPANY Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="32babade-1384-4160-adc6-733ced7f1fca">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="8428b3a6-8728-4e15-869a-9b6f63f6b17a">
+              <TableID>dbo_BRIDGE_MOVIE_COMPANY</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a3a62001-9185-4fc1-8154-df218c73b3cf">
+          <CubeDimensionID>DIM COMPANY</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ceb47ee4-c4b6-4d33-9c16-0ac1c913ca0e">
+              <AttributeID>COMPANY ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="42cd1d7d-e814-4534-a7c7-3e74355e5873">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="61887ad4-cc54-42e3-a6ff-505fe94f3dc6">
+                    <TableID>dbo_BRIDGE_MOVIE_COMPANY</TableID>
+                    <ColumnID>COMPANY_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0ed1912a-d1ce-4662-b611-b5b2aba95e77">
+          <CubeDimensionID>DIM MOVIE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ceada28d-ca3f-489d-a79f-f3785df7cc63">
+              <AttributeID>MOVIE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="28277071-eb88-4adf-a355-25ef1ff5aadf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3138e01f-80e6-4756-9072-cb723aa1fac2">
+                    <TableID>dbo_BRIDGE_MOVIE_COMPANY</TableID>
+                    <ColumnID>MOVIE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="a45f5654-153f-40a6-a4bc-620b99c91764">
+      <ID>BRIDGE MOVIE GENRE</ID>
+      <Name>BRIDGE MOVIE GENRE</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1f0fd334-ac68-4c9d-8e8d-ec9deacff58c">
+          <ID>BRIDGE MOVIE GENRE Count</ID>
+          <Name>BRIDGE MOVIE GENRE Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f5d61a3a-2690-41ab-9de9-e98629dc2aa0">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="fdcd301c-37fc-4282-a243-5e838f861ff7">
+              <TableID>dbo_BRIDGE_MOVIE_GENRE</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="28b444b3-e5b6-4bc4-8e83-47fd2e7389ca">
+          <CubeDimensionID>DIM MOVIE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6b0331f4-7f07-48d5-b240-4e8909bbcf1c">
+              <AttributeID>MOVIE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="94eca12e-50e3-482b-80e7-a5c54f8ca89a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="88c51813-9a38-4ad2-a33e-95189173a97e">
+                    <TableID>dbo_BRIDGE_MOVIE_GENRE</TableID>
+                    <ColumnID>MOVIE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c3a111b8-12d2-4407-96c1-99f8ada995e8">
+          <CubeDimensionID>DIM GENRE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f21022d5-d328-4b29-9466-3de11083d7a4">
+              <AttributeID>GENRE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5122379d-0eb5-4ca3-8813-f50eaa621d92">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ecf43242-afa6-4695-8e81-5fc71915ca03">
+                    <TableID>dbo_BRIDGE_MOVIE_GENRE</TableID>
+                    <ColumnID>GENRE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="9c86d653-3070-444d-8267-bcf69a0b68e2">
+      <ID>BRIDGE MOVIE LANGUAGE</ID>
+      <Name>BRIDGE MOVIE LANGUAGE</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="dcdc9ed0-4ca6-40ab-965a-28e98cfd2686">
+          <ID>BRIDGE MOVIE LANGUAGE Count</ID>
+          <Name>BRIDGE MOVIE LANGUAGE Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="3583c3f8-65e2-4801-a832-373b2d78a2b4">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="bd352ae1-4f39-4d0b-afcb-d2ff572d941a">
+              <TableID>dbo_BRIDGE_MOVIE_LANGUAGE</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="df9e89eb-6874-43bd-ad33-8e9a4d560f36">
+          <CubeDimensionID>DIM LANGUAGE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0b3dd3ee-c834-4080-a3e2-4e13909973af">
+              <AttributeID>LANGUAGE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="15de510c-49a2-4bb9-8cd3-1ec6cfd1b7be">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="86f58020-96ec-48b5-b67c-883cbae1096d">
+                    <TableID>dbo_BRIDGE_MOVIE_LANGUAGE</TableID>
+                    <ColumnID>LANGUAGE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0d27c023-9a2e-40c7-ad0c-6e13740e94c4">
+          <CubeDimensionID>DIM MOVIE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="609c3b65-5d06-4bb2-aa6a-36244c841e85">
+              <AttributeID>MOVIE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="626d7cb1-bca4-4e5d-abfe-83c0c9183da4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2fe55d58-8d42-426d-b434-213803871b77">
+                    <TableID>dbo_BRIDGE_MOVIE_LANGUAGE</TableID>
+                    <ColumnID>MOVIE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5ffa226d-400c-4dd4-8d8d-ab365c33c822">
+          <CubeDimensionID>BRIDGE MOVIE LANGUAGE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f12cf318-0830-4c61-8f31-0fbcab78a854">
+              <AttributeID>MOVIE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0acdb67c-6b1e-4e45-877d-90d7a2cbce00">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e464f4a9-917a-4662-85ea-f112ee73ff63">
+                    <TableID>dbo_BRIDGE_MOVIE_LANGUAGE</TableID>
+                    <ColumnID>MOVIE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="371f59c8-59a7-4a27-a746-248124960faa">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8a71dc79-abfa-41ad-85c2-30a8ce8dbcd4">
+                    <TableID>dbo_BRIDGE_MOVIE_LANGUAGE</TableID>
+                    <ColumnID>LANGUAGE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="dec6a50e-7f80-4642-96db-409ae36d3809">
+    <DataSourceViewID>TMDB Movie Data Ware House</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="8fac5772-1628-4cbf-b016-5015afd93f72">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Profit]
+ AS [Measures].[REVENUE]-[Measures].[BUDGET], 
+VISIBLE = 1  ;  
+CREATE MEMBER CURRENTCUBE.[Measures].[% Adult Films]
+ AS IIF([Measures].[FACT MOVIE Count] = 0, NULL, ([DIM MOVIE].[Adult].&amp;[True], [Measures].[FACT MOVIE Count])/[Measures].[FACT MOVIE Count]), 
+VISIBLE = 1;   
+CREATE MEMBER CURRENTCUBE.[Measures].Profitability
+ AS IIF([Measures].[BUDGET] = 0 OR [Measures].[BUDGET] IS NULL, NULL, ([Measures].[REVENUE] - [Measures].[BUDGET]) / [Measures].[BUDGET]), 
+VISIBLE = 1;    
+CREATE MEMBER CURRENTCUBE.[Measures].Average_Revenue
+ AS [Measures].[REVENUE] / [Measures].[FACT MOVIE Count], 
+VISIBLE = 1; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>
