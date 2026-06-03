@@ -53,7 +53,7 @@ Kho chứa này được tổ chức theo các phân mục chức năng như sau
 Do quy định giới hạn dung lượng của GitHub, một số file dữ liệu thô gốc (`.csv` > 500MB) và file báo cáo chi tiết không thể đẩy trực tiếp lên kho chứa này. Nhóm đã sao lưu toàn bộ phiên bản đầy đủ tại đường link dưới đây:
 
 👉 **[[Bấm vào đây để tải Dataset gốc (Kaggle)]](https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies)**  
-👉 **[[Bấm vào đây để tải Báo cáo đầy đủ (Google Drive)]](https://docs.google.com/document/d/11mu0VT6AdEWilfDGRYg95d9LCZizHExI/edit?usp=sharing&ouid=113799970762456408969&rtpof=true&sd=true)**
+👉 **[[Bấm vào đây để tải Báo cáo đầy đủ (Google Drive)]](https://drive.google.com/file/d/1IOkL_SpJFg3_ThbZtfZe9taGEcxxhSqo/view?usp=sharing)**
 
 ---
 
